@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bellezafashion">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BellezaFashion">
+        <activity android:name=".Designerlist"></activity>
+        <activity android:name=".DesignerUserActivity" />
+        <activity android:name=".DesignerprofileActivity" />
+        <activity android:name=".currentDesignActivity" />
+        <activity android:name=".DesignerActivity3" />
+        <activity android:name=".DesignerActivity2" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

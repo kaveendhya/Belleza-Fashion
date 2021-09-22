@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Belleza Fashion</string>
+    <string name="btn_designer">Designer Managemennt</string>
+    <string name="btn_List">Designer List</string>
+    <string name="btn_cal">Calcul</string>
+    <string name="btn_addDesigner">Add New Designer</string>
+    <string name="btn_Current">Search Designer</string>
+    <string name="txt_register">Designer Details</string>
+    <string name="et_DesignerID" />
+    <string name="btn_add">Add detail</string>
+    <string name="btn_update">Update</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_Search">Search Details</string>
+    <string name="et_profileName" />
+    <string name="et_profileOcc" />
+    <string name="tv_prName">ID:</string>
+    <string name="tv_name">Name</string>
+    <string name="tv_Occpation">Occupation</string>
+    <string name="btn_Update">Update details</string>
+    <string name="btn_Delete">Delete</string>
+</resources>

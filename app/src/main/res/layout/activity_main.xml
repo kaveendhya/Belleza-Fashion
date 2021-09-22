@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_design"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="128dp"
+        android:text="Find Your designer "
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_designer"
+        android:layout_width="370dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="232dp"
+        android:onClick="Designer"
+        android:text="@string/btn_designer"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_design" />
+
+    <Button
+        android:id="@+id/btn_List"
+        android:layout_width="370dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="24dp"
+        android:onClick="List"
+        android:text="@string/btn_List"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_designer" />
+
+    <Button
+        android:id="@+id/btn_cal"
+        android:layout_width="370dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/btn_cal"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_List" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

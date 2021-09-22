@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background4"
+    tools:context=".DesignerActivity2">
+
+    <Button
+        android:id="@+id/btn_addDesigner"
+        android:layout_width="379dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="408dp"
+        android:onClick="Designerset"
+        android:text="@string/btn_addDesigner"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_Current"
+        android:layout_width="379dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="44dp"
+        android:onClick="CurrentDes"
+        android:text="@string/btn_Current"
+        app:cornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_addDesigner" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
