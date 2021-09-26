@@ -18,4 +18,44 @@
     <string name="tv_Occpation">Occupation</string>
     <string name="btn_Update">Update details</string>
     <string name="btn_Delete">Delete</string>
+
+
+    <string name="policy">policy</string>
+    <string name="deliverydetails">Delivery Details</string>
+    <string name="fee">fee</string>
+    <string name="name" />
+    <string name="number" />
+    <string name="address" />
+    <string name="pref" />
+    <string name="note" />
+    <string name="sendas" />
+    <string name="save">save</string>
+    <string name="view">view</string>
+    <string name="update">update</string>
+    <string name="delete">delete</string>
+    <string name="ldeliverydetails">Delivery Details</string>
+    <string name="lname">Recivers name</string>
+    <string name="lnumber">Recivers phone</string>
+    <string name="laddress">Recivers Address</string>
+    <string name="lpref">Any preferences</string>
+    <string name="lnote">Add notes</string>
+    <string name="lsendas">Send as</string>
+    <string name="nfee">Next</string>
+
+    <string name="textView">You can Deliver Now to your Door step.Pay After Delivery. </string>
+    <string name="text2">Your Delivery Charge RS:290/=</string>
+    <string name="next">Next</string>
+    <string name="textView2">You can get Your Order within Two days Using Our Fast delivery Plan</string>
+    <string name="fast">Accept Fast Delivery</string>
+    <string name="packaging">Accept Decorative Packaging</string>
+    <string name="calculate">Calculate</string>
+    <string name="display1">display</string>
+    <string name="ddfee">Delivery Fee</string>
+    <string name="tvalue">Your Total Delivery Fee is:</string>
+    <string name="dpolicy">DELIVERY POLICY</string>
+    <string name="dpp">All items are delivered safely and handled with care.No exchanges or refunds will be accepted.</string>
+    <string name="agree">I Agree</string>
+    <string name="confirmpolicy">Confirm Policy</string>
+    <string name="calender">Calender</string>
+    <string name="caldis">Delivery is done within 3 working days from Monday to Saturday.</string>
 </resources>
