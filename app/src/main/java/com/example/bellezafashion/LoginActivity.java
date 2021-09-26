@@ -91,7 +91,7 @@ public class LoginActivity extends AppCompatActivity {
         }
         else{
             loadingBar.setTitle("login Account");
-            loadingBar.setMessage("Please wait while we are checking the credientials");
+            loadingBar.setMessage("Please wait while we are checking the credentials");
             loadingBar.setCanceledOnTouchOutside(false);
             loadingBar.show();
 
@@ -100,15 +100,12 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void AllowAccessToAccount(String un, String pw) {
-
         if(checkRemeberMe.isChecked()){
             Paper.book().write(Prevalent.Userun,un);
             Paper.book().write(Prevalent.Userpw,pw);
         }
-
         final DatabaseReference RootRef;
         RootRef = FirebaseDatabase.getInstance().getReference();
-
         RootRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -141,13 +138,11 @@ public class LoginActivity extends AppCompatActivity {
                 else {
                     Toast.makeText(LoginActivity.this,"Account with this"+ un + "does not exist", Toast.LENGTH_SHORT).show();
                     loadingBar.dismiss();
-                    Toast.makeText(LoginActivity.this,"You need to create a new account", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(LoginActivity.this,"You need to create a new account", Toast.LENGTH_SHORT).show();
                 }
             }
-
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-
             }
         });
     }

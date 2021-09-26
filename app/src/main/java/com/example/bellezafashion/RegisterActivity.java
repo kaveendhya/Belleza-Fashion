@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import android.text.TextUtils;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -23,7 +24,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.HashMap;
-import java.util.jar.Attributes;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -56,7 +56,6 @@ public class RegisterActivity extends AppCompatActivity {
         String un = username.getText().toString();
         String pw = password.getText().toString();
         String mail = email.getText().toString();
-
         if(TextUtils.isEmpty(Name)){
             Toast.makeText(this,"Please Enter Your Name", Toast.LENGTH_SHORT).show();
         }
@@ -66,21 +65,28 @@ public class RegisterActivity extends AppCompatActivity {
         else if(TextUtils.isEmpty(pw)){
             Toast.makeText(this,"Please Enter Your Password", Toast.LENGTH_SHORT).show();
         }
-        else if(TextUtils.isEmpty(mail)){
-            Toast.makeText(this,"Please Enter Your Password", Toast.LENGTH_SHORT).show();
-        }
         else{
             loadingBar.setTitle("Create Account");
-            loadingBar.setMessage("Please wait while we are checking the credientials");
+            loadingBar.setMessage("Please wait while we are checking the credentials");
             loadingBar.setCanceledOnTouchOutside(false);
             loadingBar.show();
 
+            isValidEmail(mail);
             ValidateUsername(Name,un,pw,mail);
-
-
         }
-
     }
+
+
+    public void isValidEmail(String mail) {
+       if (!TextUtils.isEmpty(mail) && Patterns.EMAIL_ADDRESS.matcher(mail).matches()){
+           Toast.makeText(this,"Email verrified",Toast.LENGTH_SHORT).show();
+       }
+       else{
+           loadingBar.dismiss();
+           Toast.makeText(this,"Invalid Email",Toast.LENGTH_SHORT).show();
+       }
+    }
+
 
     private void ValidateUsername(String name, String un, String pw,String mail) {
         final DatabaseReference RootRef;
@@ -118,7 +124,7 @@ public class RegisterActivity extends AppCompatActivity {
                 else{
                     Toast.makeText(RegisterActivity.this,"This "+ un + "already exists", Toast.LENGTH_SHORT).show();
                     loadingBar.dismiss();
-                    Toast.makeText(RegisterActivity.this,"Please try again with a another username", Toast.LENGTH_SHORT).show();
+                   // Toast.makeText(RegisterActivity.this,"Please try again with a another username", Toast.LENGTH_SHORT).show();
 
                     Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
                     startActivity(intent);

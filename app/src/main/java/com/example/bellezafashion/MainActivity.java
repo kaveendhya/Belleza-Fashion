@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
                 else {
                     Toast.makeText(MainActivity.this,"Account with this"+ un + "does not exist", Toast.LENGTH_SHORT).show();
                     loadingBar.dismiss();
-                    Toast.makeText(MainActivity.this,"You need to create a new account", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(MainActivity.this,"You need to create a new account", Toast.LENGTH_SHORT).show();
                 }
             }
 

@@ -27,8 +27,22 @@ public class HomeActivity extends AppCompatActivity {
 
             }
         });
+
+        shop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openShop();
+            }
+        });
+
     }
-        private void openActivityProfile() {
+
+    private void openShop() {
+        Intent intent = new Intent(HomeActivity.this, ProductList.class);
+        startActivity(intent);
+    }
+
+    private void openActivityProfile() {
         Intent intent = new Intent(HomeActivity.this, ProfileActivity.class);
         startActivity(intent);
     }

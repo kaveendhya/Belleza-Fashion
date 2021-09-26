@@ -3,6 +3,7 @@ package com.example.bellezafashion;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -24,7 +25,7 @@ public class ProfileActivity extends AppCompatActivity {
 
     private ImageView profileImage;
     private EditText name,username,email;
-    private Button save;
+    private Button save,logout;
     private TextView changeProf;
     private String parentDbName = "Users";
 
@@ -35,6 +36,7 @@ public class ProfileActivity extends AppCompatActivity {
 
         profileImage = (ImageView) findViewById(R.id.img);
         save = (Button) findViewById(R.id.ptxt);
+        logout = (Button) findViewById(R.id.pbtn);
         username = (EditText) findViewById(R.id.ptxt1);
         name = (EditText) findViewById(R.id.ptxt2);
         email = (EditText) findViewById(R.id.ptxt3);
@@ -49,10 +51,19 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
 
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ProfileActivity.this, LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
     private void userInfoDisplay(EditText username, EditText name, EditText email) {
-        DatabaseReference UserRef = FirebaseDatabase.getInstance().getReference().child("Users").child(Prevalent.CurrentOnlineUser.getUsername());
+        DatabaseReference UserRef = FirebaseDatabase.getInstance().getReference().child("Users")
+                .child(Prevalent.CurrentOnlineUser.getUsername());
         UserRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -61,15 +72,11 @@ public class ProfileActivity extends AppCompatActivity {
                         name.setText(snapshot.child("name").getValue().toString());
                         username.setText(snapshot.child("username").getValue().toString());
                         email.setText(snapshot.child("email").getValue().toString());
-
                     }
                 }
             }
-
             @Override
-            public void onCancelled(@NonNull DatabaseError error) {
-
-            }
+            public void onCancelled(@NonNull DatabaseError error) { }
         });
     }
 
@@ -84,8 +91,6 @@ public class ProfileActivity extends AppCompatActivity {
         UserRef.child(Prevalent.CurrentOnlineUser.getUsername()).updateChildren(userMap);
 
         Toast.makeText(this,"Updated successfully",Toast.LENGTH_SHORT).show();
-
-
     }
 }
 
