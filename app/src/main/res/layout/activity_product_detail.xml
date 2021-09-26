@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDetail"
+    android:background="@drawable/newbackground">
+
+    <TextView
+        android:id="@+id/in_product_detail_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Product Name"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+
+        />
+
+
+    <!--    <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton-->
+
+    <!--        android:id="@+id/in_number_BTN"-->
+    <!--        android:layout_width="329dp"-->
+    <!--        android:layout_height="74dp"-->
+    <!--        android:layout_below="@+id/in_product_detail_description"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_marginTop="37dp"-->
+    <!--        android:elevation="16dp"-->
+    <!--        android:gravity="center"-->
+    <!--        app:backGroundColor="#BF007A"-->
+    <!--        app:finalNumber="10"-->
+    <!--        app:initialNumber="1">-->
+
+    <!--    </com.cepheuen.elegantnumberbutton.view.ElegantNumberButton>-->
+
+    <ImageView
+        android:id="@+id/in_product_image_detail"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_below="@id/in_product_detail_name"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/prof2" />
+
+    <TextView
+        android:id="@+id/in_product_detail_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/in_product_image_detail"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="19dp"
+        android:gravity="center"
+        android:text="Product Price"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/in_product_detail_designer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/in_product_detail_price"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Designer"
+        android:textColor="@color/black"
+
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/in_product_detail_description"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_below="@+id/in_product_detail_designer"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="21dp"
+        android:gravity="center"
+        android:text="Description"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/in_product_add_to_cart"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/in_product_detail_description"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="108dp"
+        android:text="Add To Cart"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

@@ -9,13 +9,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BellezaFashion">
-        <activity android:name=".Designerlist"></activity>
+        <activity android:name=".SearchPriducts">
+
+        </activity>
+        <activity android:name=".ProductDetail" />
+        <activity android:name=".ProductList">
+
+        </activity>
+        <activity android:name=".AdminItemCategory">
+
+        </activity>
+        <activity android:name=".AdminAddProducts" />
+        <activity android:name=".Designerlist" />
         <activity android:name=".DesignerUserActivity" />
         <activity android:name=".DesignerprofileActivity" />
         <activity android:name=".currentDesignActivity" />
         <activity android:name=".DesignerActivity3" />
         <activity android:name=".DesignerActivity2" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
