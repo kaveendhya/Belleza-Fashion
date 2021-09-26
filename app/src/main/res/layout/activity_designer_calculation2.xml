@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".DesignerCalculation2">
+
+    <EditText
+        android:id="@+id/et_desCost"
+        android:layout_width="203dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.546"
+        app:layout_constraintStart_toEndOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:text="Designer hire Cost"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_desBasicp"
+        android:layout_width="203dp"
+        android:layout_height="43dp"
+        android:background="#DFDBDB"
+        android:text="@string/tv_desBasicp"
+        android:textSize="22dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.71"
+        app:layout_constraintStart_toEndOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="105dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="basic rough cost"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/Tv_desMet"
+        android:layout_width="203dp"
+        android:layout_height="43dp"
+        android:layout_marginEnd="24dp"
+        android:background="#DCD2D2"
+        android:text="@string/Tv_desMet"
+        android:textSize="22dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textView20"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="146dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="price with the type you chose "
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/tv_desTypep"
+        android:layout_width="203dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="#DCD2D2"
+        android:text="@string/tv_desTypep"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tv_desMet" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:background="#E4D8D8"
+        android:text="Choose category......"
+        android:textColor="#BC0A81"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <ImageButton
+        android:id="@+id/Ibtn_desDress"
+        android:layout_width="65dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:onClick="dress"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:srcCompat="@drawable/dress" />
+
+    <ImageButton
+        android:id="@+id/Ibtn_jump"
+        android:layout_width="63dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:onClick="jumper"
+        app:layout_constraintStart_toEndOf="@+id/Ibtn_desDress"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:srcCompat="@drawable/jump" />
+
+    <ImageButton
+        android:id="@+id/Img_desSaree"
+        android:layout_width="68dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="80dp"
+        android:onClick="saree"
+        app:layout_constraintStart_toEndOf="@+id/Ibtn_jump"
+        app:layout_constraintTop_toBottomOf="@+id/tv_desTypep"
+        app:srcCompat="@drawable/sarrre" />
+
+    <ImageButton
+        android:id="@+id/ing_skirtDes"
+        android:layout_width="66dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="80dp"
+        android:onClick="Skirt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.434"
+        app:layout_constraintStart_toEndOf="@+id/Img_desSaree"
+        app:layout_constraintTop_toBottomOf="@+id/tv_desTypep"
+        app:srcCompat="@drawable/skandbl" />
+
+    <Button
+        android:id="@+id/btn_desSilk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="Silk"
+        android:text="@string/btn_desSilk"
+        app:cornerRadius="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/btn_desbathik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:onClick="Bathik"
+        android:text="@string/btn_desbathik"
+        app:cornerRadius="20dp"
+        app:layout_constraintStart_toEndOf="@+id/btn_desSilk"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <Button
+        android:id="@+id/btn_desCotton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="69dp"
+        android:onClick="Cotton"
+        android:text="@string/btn_desCotton"
+        app:cornerRadius="20dp"
+        app:layout_constraintStart_toEndOf="@+id/btn_desbathik"
+        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+    <Button
+        android:id="@+id/btn_desLinon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="69dp"
+        android:onClick="Linen"
+        android:text="@string/btn_desLinon"
+        app:cornerRadius="20dp"
+        app:layout_constraintStart_toEndOf="@+id/btn_desCotton"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <Button
+        android:id="@+id/btn_desCasual"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:onClick="Casual"
+        android:text="@string/btn_desCasual"
+        app:backgroundTint="#9C8897"
+        app:cornerRadius="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <Button
+        android:id="@+id/btn_desParty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:onClick="Party"
+        android:text="@string/btn_desParty"
+        app:backgroundTint="#978282"
+        app:cornerRadius="20dp"
+        app:layout_constraintStart_toEndOf="@+id/btn_desCasual"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <Button
+        android:id="@+id/btn_Resetdes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:onClick="reset"
+        android:text="@string/btn_Resetdes"
+        app:backgroundTint="#224A60"
+        app:cornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_desLinon" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:background="#E4D8D8"
+        android:text="choose prference material....."
+        android:textColor="#780251"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:background="#E4D8D8"
+        android:text="choose type...."
+        android:textColor="#780251"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_desSilk" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:background="#E4D8D8"
+        android:text="dress"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Ibtn_desDress" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="10dp"
+        android:background="#E4D8D8"
+        android:text="gump suit"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/Ibtn_jump" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="10dp"
+        android:background="#E4D8D8"
+        android:text="saree"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/Img_desSaree" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="10dp"
+        android:background="#E4D8D8"
+        android:text="Skirt and Blouse"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/textView18"
+        app:layout_constraintTop_toBottomOf="@+id/ing_skirtDes" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="131dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="price with choosed material"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="378dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="16dp"
+        android:text="Our company Designing prices details.. "
+        android:textColor="#BA0478"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

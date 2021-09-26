@@ -10,38 +10,43 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="330dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="128dp"
-        android:text="Find Your designer "
+        android:layout_width="373dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="60dp"
+        android:text="Find Your fashion designer..... "
         android:textAlignment="center"
-        android:textColor="@color/purple_500"
-        android:textSize="30dp"
+        android:textColor="#C31182"
+        android:textSize="32dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.421"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn_DesiList"
         android:layout_width="370dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="232dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="32dp"
         android:onClick="DesignList"
         android:text="DESIGNERS DETAILS"
+        android:textSize="18dp"
+        android:textStyle="bold"
         app:cornerRadius="15dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="370dp"
-        android:layout_height="57dp"
+        android:layout_height="65dp"
         android:layout_marginTop="24dp"
-        android:text="DESIGN COST"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:onClick="Designcalc"
+        android:text="FIND DESIGNING COST"
         app:cornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,4 +54,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_DesiList"
         app:layout_constraintVertical_bias="0.056" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="222dp"
+        android:layout_height="215dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/blouse" />
 </androidx.constraintlayout.widget.ConstraintLayout>

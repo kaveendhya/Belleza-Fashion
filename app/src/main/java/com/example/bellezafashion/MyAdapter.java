@@ -56,7 +56,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
             tvlistid = itemView.findViewById(R.id.tvlistid);
             tvlistname = itemView.findViewById(R.id.tvlistname);
-            tvlistocc =itemView.findViewById(R.id.tvlistname);
+            tvlistocc =itemView.findViewById(R.id.tvlistocc);
             tvlistmail = itemView.findViewById(R.id.tvlistmail);
             listphone = itemView.findViewById(R.id.listphone);
             tvlistcost = itemView.findViewById(R.id.tvlistcost);

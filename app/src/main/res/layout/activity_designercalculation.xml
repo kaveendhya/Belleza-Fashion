@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Designercalculation">
+
+    <TextView
+        android:id="@+id/tv_desDes"
+        android:layout_width="367dp"
+        android:layout_height="83dp"
+        android:background="#FADFDF"
+        android:text="If you enter your favorite designer ID here you can get rough idea about our company charge for the customer "
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="italic"
+        app:cornerRadius="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Desprod" />
+
+    <Button
+        android:id="@+id/btn_Desprod"
+        android:layout_width="370dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="24dp"
+        android:onClick="DesignPrice"
+        android:text="Search Basic Cost"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:cornerRadius="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_DesCostID"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/et_DesCostID"
+        android:layout_width="357dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/designer_inputdesign"
+        android:ems="10"
+        android:hint="Enter Designer Id"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="@color/black"
+        android:textColorHint="@color/purple_500"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="379dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="36dp"
+        android:text="Company Designing cost details"
+        android:textAlignment="center"
+        android:textColor="#930463"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.427"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="195dp"
+        android:layout_height="213dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:srcCompat="@drawable/besignersearch" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

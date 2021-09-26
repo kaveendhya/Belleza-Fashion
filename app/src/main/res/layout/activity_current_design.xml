@@ -4,36 +4,67 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background8"
+    android:background="@drawable/background"
     tools:context=".currentDesignActivity">
 
 
     <EditText
         android:id="@+id/et_search"
-        android:layout_width="246dp"
-        android:layout_height="69dp"
-        android:layout_marginTop="184dp"
+        android:layout_width="341dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/designer_inputdesign"
         android:ems="10"
         android:hint="Enter Designer Id"
         android:inputType="textPersonName"
         android:textColor="@color/white"
-        android:textColorHint="@color/white"
+        android:textColorHint="@color/purple_500"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.557"
+        app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
     <Button
         android:id="@+id/btn_Search"
-        android:layout_width="379dp"
-        android:layout_height="68dp"
-        android:layout_marginBottom="344dp"
+        android:layout_width="349dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="150dp"
         android:onClick="UpPage"
         android:text="@string/btn_Search"
+        android:textSize="18dp"
+        android:textStyle="bold"
         app:cornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_search"
-        app:layout_constraintVertical_bias="0.848" />
+        app:layout_constraintVertical_bias="0.34" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="350dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="52dp"
+        android:text="Search Designers details"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="186dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/besignersearch" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

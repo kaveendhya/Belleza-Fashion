@@ -18,4 +18,14 @@
     <string name="tv_Occpation">Occupation</string>
     <string name="btn_Update">Update details</string>
     <string name="btn_Delete">Delete</string>
+    <string name="tv_desBasicp" />
+    <string name="Tv_desMet" />
+    <string name="tv_desTypep" />
+    <string name="btn_desCotton">Cotton</string>
+    <string name="btn_desSilk">Silk</string>
+    <string name="btn_desbathik">Bathik</string>
+    <string name="btn_desLinon">Linen</string>
+    <string name="btn_desCasual">Casual</string>
+    <string name="btn_desParty">Party</string>
+    <string name="btn_Resetdes">Reset</string>
 </resources>

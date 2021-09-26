@@ -22,7 +22,7 @@ public class DesignerActivity3 extends AppCompatActivity {
     Button btn_add;
     Designer Desg;
     DatabaseReference debRef;
-    String regexStr = "[0][1,7][0-9]{9}";
+    String regexStr = "[0][0-9]{9}";
 
 
 
@@ -75,7 +75,7 @@ public class DesignerActivity3 extends AppCompatActivity {
             else if (!Patterns.EMAIL_ADDRESS.matcher(et_email.getText().toString()).matches())
                 Toast.makeText(getApplicationContext(),"invalid Email address", Toast.LENGTH_SHORT).show();
             else if ((et_phone.getText().toString().length()> 10) || !et_phone.getText().toString().matches(regexStr)){
-                    Toast.makeText(getApplicationContext(),"invalid Email address", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),"invalid Phone address", Toast.LENGTH_SHORT).show();
             //else if ()
 
             } else{
@@ -89,7 +89,7 @@ public class DesignerActivity3 extends AppCompatActivity {
                 debRef.child(et_DesignerID.getText().toString()).setValue(Desg);
 
                 Toast.makeText(getApplicationContext(), "Data inserted successfully",Toast.LENGTH_SHORT).show();
-                Clearcontrol();
+                //Clearcontrol();
 
             }
 

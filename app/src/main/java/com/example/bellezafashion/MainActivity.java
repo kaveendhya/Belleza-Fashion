@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btn_designer,btn_List,btn_cal;
+    Button btn_designer,btn_List;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
         btn_designer = findViewById(R.id.btn_designer);
         btn_List = findViewById(R.id.btn_List);
-        btn_cal = findViewById(R.id.btn_cal);
+
 
     }
 

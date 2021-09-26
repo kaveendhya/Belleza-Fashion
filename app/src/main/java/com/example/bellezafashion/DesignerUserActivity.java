@@ -25,4 +25,10 @@ public class DesignerUserActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
+
+    public void Designcalc(View view){
+        Intent intent = new Intent(this, Designercalculation.class);
+        startActivity(intent);
+
+    }
 }

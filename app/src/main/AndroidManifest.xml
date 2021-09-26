@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BellezaFashion">
-        <activity android:name=".Designerlist"></activity>
+        <activity android:name=".DesignerCalculation2"></activity>
+        <activity android:name=".Designercalculation" />
+        <activity android:name=".Designerlist" />
         <activity android:name=".DesignerUserActivity" />
         <activity android:name=".DesignerprofileActivity" />
         <activity android:name=".currentDesignActivity" />

@@ -4,33 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background4"
+    android:background="@drawable/background"
     tools:context=".DesignerActivity2">
 
     <Button
         android:id="@+id/btn_addDesigner"
-        android:layout_width="379dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="408dp"
+        android:layout_width="382dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="48dp"
         android:onClick="Designerset"
         android:text="@string/btn_addDesigner"
+        android:textSize="18dp"
+        android:textStyle="bold"
         app:cornerRadius="15dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.539"
+        app:layout_constraintHorizontal_bias="0.413"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
 
     <Button
         android:id="@+id/btn_Current"
-        android:layout_width="379dp"
-        android:layout_height="58dp"
+        android:layout_width="387dp"
+        android:layout_height="67dp"
         android:layout_marginTop="44dp"
         android:onClick="CurrentDes"
         android:text="@string/btn_Current"
+        android:textSize="18dp"
+        android:textStyle="bold"
         app:cornerRadius="15dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_addDesigner" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="365dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="36dp"
+        android:text="Designer Management"
+        android:textAlignment="center"
+        android:textColor="@color/purple_500"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="270dp"
+        android:layout_height="267dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:srcCompat="@drawable/besignersearch" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
